@@ -26,7 +26,7 @@
   <parent>
     <groupId>org.tomitribe</groupId>
     <artifactId>sheldon-parent</artifactId>
-    <version>0.9-SNAPSHOT</version>
+    <version>0.9-demo1-SNAPSHOT</version>
   </parent>
 
   <artifactId>sheldon-rar</artifactId>
@@ -38,6 +38,16 @@
       <groupId>org.tomitribe</groupId>
       <artifactId>sheldon-impl</artifactId>
       <version>${project.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.bval</groupId>
+          <artifactId>bval-jsr</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.geronimo.specs</groupId>
+          <artifactId>geronimo-validation_1.1_spec</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.sshd</groupId>

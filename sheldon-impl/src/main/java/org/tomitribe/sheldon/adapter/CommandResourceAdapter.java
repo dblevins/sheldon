@@ -209,7 +209,7 @@ public class CommandResourceAdapter implements ResourceAdapter, SecurityHandler 
             }
         }
 
-        @Override
+//        @Override
         public Object getInstance(Method method) {
             return method.getDeclaringClass();
         }
